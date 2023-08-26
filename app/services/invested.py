@@ -20,7 +20,7 @@ async def get_open_obj_generate(
         - session (AsyncSession) асинхронная сессия базы данных.
     Добавлена через Depends.
     #### Returns:
-        - AsyncGenerator[BaseModel, None]: Генерин=рует объекты BaseModel.
+        - AsyncGenerator[BaseModel, None]: Генерирует объекты BaseModel.
     """
     query_open_obj = await session.execute(
         select(model)

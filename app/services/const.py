@@ -48,3 +48,16 @@ class StringValidatorsError:
     NOT_FOUND = 'Проект не найден'
     FUNDS_PROJECT = 'В проект были внесены средства, не подлежит удалению!'
     CLOSED_PROJECT = 'Закрытый проект нельзя редактировать!'
+
+
+@dataclass(frozen=True)
+class StringGoogleApi:
+    """
+    Строковые константы для описание конечных точек
+    /google_api
+    """
+    GET_CREATE = 'Формирует отчет'
+    GET_CREATE_DESCRIPTION = (
+        'Возвращает ссылку на отчет и список'
+        'данных внесенных в отчет'
+    )
