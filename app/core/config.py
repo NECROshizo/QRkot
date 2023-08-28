@@ -8,7 +8,6 @@ class Settings(BaseSettings):
     description: str = 'Сервис для поддержки котиков!'
     secret: str = 'SECRET'
     database_url: str = 'sqlite+aiosqlite:///./fastapi.db'
-    # Переменные для Google API
     type: Optional[str] = None
     project_id: Optional[str] = None
     private_key_id: Optional[str] = None
